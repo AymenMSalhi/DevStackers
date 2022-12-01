@@ -1,0 +1,51 @@
+.navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, .8);
+    border-bottom: 4px solid transparent;
+}
+
+.navbar-menu {
+    margin-right: 80px;
+}
+
+.social-box {
+    width: 40px;
+    height: 160px;
+    background: transparent;
+    top: 80px;
+    right: 20px;
+    position: fixed;
+}
+
+.social-link {
+    width: 32px !important;
+    height: 32px;
+    
+    background: #ddff0050;
+    border-radius: 50%;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 auto 8px auto;
+    transition: 0.5s;
+}
+
+.social-link a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: #ddff00;
+}
+
+.social-link:hover a,
+.social-link:focus a {
+    color: #151515;
+}
+
+.public-footer {
+    width: 100%;
+    min-height: 150px !important;
+    background: #000;
+}

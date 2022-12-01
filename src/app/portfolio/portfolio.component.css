@@ -1,0 +1,115 @@
+.brandingstatementsection .statement {
+    
+}
+
+.brandingstatementsection .statement h1,
+.brandingstatementsection .statement h3,
+.aboutmesection .statement h1,
+.myservicesection .row h1,
+.myskillsection .row h1,
+.myworksection .row h1,
+.feedbacksection .row h1,
+.studiessection .row h1,
+.contactsection .row h1 {
+    font-family: 'Handlee', cursive;
+}
+.brandingstatementsection .statement h1 {
+    font-size: 54px;
+}
+
+.brandingstatementsection .statement h1 span {
+    color: #ddff00;
+}
+
+.hiremodalitems a {
+    width: 220px;
+    height: 220px;
+    padding: 0;
+    margin: 5px;
+    box-shadow: 0 0 16px #aaa;
+    text-decoration: none;
+    color: #151515;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.hiremeModalItem {
+    width: 220px;
+    height: 220px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.hiremeModalItem .hirememodalicon img {
+    width: 42px;
+}
+
+.hiretitle {
+    font-size: 24px;
+    text-align: center;
+}
+
+.hiremeModalItem .fa-arrow-right {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.upworkwhatsapplink:hover,
+.upworkwhatsapplink:focus {
+    box-shadow: 0 0 16px #757575 !important;
+    color: #04C600 !important;
+}
+.linkedinlink:hover,
+.linkedinlink:focus {
+    box-shadow: 0 0 16px #757575 !important;
+    color: #0056c6 !important;
+}
+
+
+
+
+
+
+/* Arrow & Hover Animation */
+#more-arrows {
+    width: 75px;
+    height: 65px;
+}
+
+.linkedinlink:hover polygon {
+    fill: #0056c6 !important;
+    transition: all 0.5s ease-out;
+}
+.upworkwhatsapplink:hover polygon {
+    fill: #04C600;
+    transition: all 0.5s ease-out;
+}
+.hiremodalitems a:hover polygon.arrow-bottom {
+    transform: translateY(-18px);
+}
+.hiremodalitems a:hover polygon.arrow-top {
+    transform: translateY(18px);
+}
+polygon {
+    fill: #151515;
+    transition: all 0.5s ease-out;
+}
+polygon.arrow-middle {
+    opacity: 0.75;
+}
+polygon.arrow-top {
+    opacity: 0.5;
+}
+
+
+.servicesrow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.py-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}

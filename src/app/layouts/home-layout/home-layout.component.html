@@ -1,0 +1,89 @@
+<!--<div class="px-md-5 px-sm-3 px-2">
+    
+    <div class="logo">
+        <h1><span>Aymen</span> Salhi</h1>
+    </div>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+
+</div>-->
+
+<nav class="navbar navbar-expand-md" style="width: 100%; top: 0; left: 0; right: 0; height: 60px; position: fixed; background: #151515; z-index: 20000;">
+    <div class="container-fluid px-md-3">
+      <a class="navbar-brand text-white" href="#" style="font-family: 'Handlee', cursive; font-size: 32px;"><span style="color: #ddff00 !important; margin-right: 8px;"> Aymen</span>Salhi</a>
+      <button class="navbar-toggler" style="background: #ddff00" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-dark"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background: #151515 !important">
+        <ul class="navbar-nav navbar-menu ms-auto mb-0">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home" routerLinkActive="activeRoute">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myservices">My Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myskills">My Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myworks">My Works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/blog" routerLinkActive="activeRoute">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contactussection">Contact Me</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="social-box">
+    <div class="social-link">
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="social-link">
+        <a href=""><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="social-link">
+        <a href=""><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="social-link">
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    
+</div>
+
+
+<div class="container-fluid mx-0 px-0" style="margin-top: 80px;">
+    <router-outlet></router-outlet>
+</div>
+
+
+<div class="public-footer">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium hic deleniti qui ducimus dolore, a non laudantium pariatur commodi, itaque ut neque consequuntur aliquid at alias quisquam? Fuga, assumenda repellendus.
+</div>
