@@ -1,17 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "985bb492-44ab-4d2b-9269-5758635a66f4"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AymenSalhiPortfolio": {
+    "Aymen2023": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        },
         "@schematics/angular:component": {
           "style": "scss"
         }
@@ -23,12 +17,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AymenSalhiPortfolio",
+            "outputPath": "dist/aymen2023",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -40,19 +34,6 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -64,25 +45,42 @@
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
                 }
-              ]
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "AymenSalhiPortfolio:build"
-          },
           "configurations": {
             "production": {
-              "browserTarget": "AymenSalhiPortfolio:build:production"
+              "browserTarget": "Aymen2023:build:production"
+            },
+            "development": {
+              "browserTarget": "Aymen2023:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AymenSalhiPortfolio:build"
+            "browserTarget": "Aymen2023:build"
           }
         },
         "test": {
@@ -92,6 +90,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -101,34 +100,11 @@
             ],
             "scripts": []
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AymenSalhiPortfolio:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "AymenSalhiPortfolio:serve:production"
-            }
-          }
         }
       }
     }
   },
-  "defaultProject": "AymenSalhiPortfolio"
+  "cli": {
+    "analytics": "d79a33fb-7360-48fe-aa82-6b8f24f5b8c9"
+  }
 }
