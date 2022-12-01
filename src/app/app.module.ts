@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
+import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
+import { MainHeaderComponent } from './layouts/main-header/main-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeLayoutComponent
+    MainLayoutComponent,
+    MainHeaderComponent
   ],
   imports: [
     BrowserModule,
