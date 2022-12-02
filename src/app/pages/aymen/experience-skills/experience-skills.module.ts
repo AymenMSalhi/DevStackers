@@ -12,6 +12,9 @@ import { ExperienceSkillsComponent } from './experience-skills.component';
   imports: [
     CommonModule,
     ExperienceSkillsRoutingModule
+  ],
+  exports: [
+    ExperienceSkillsComponent
   ]
 })
 export class ExperienceSkillsModule { }

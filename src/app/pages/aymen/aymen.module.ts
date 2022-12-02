@@ -3,31 +3,31 @@ import { CommonModule } from '@angular/common';
 
 import { AymenRoutingModule } from './aymen-routing.module';
 import { AymenComponent } from './aymen.component';
-import { IntroComponent } from './intro/intro.component';
-import { AboutComponent } from './about/about.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
-import { ExperienceSkillsComponent } from './experience-skills/experience-skills.component';
-import { FeedbacksComponent } from './feedbacks/feedbacks.component';
-import { LinksComponent } from './links/links.component';
-import { MyServicesComponent } from './my-services/my-services.component';
-import { StudiesComponent } from './studies/studies.component';
+import { IntroModule } from './intro/intro.module';
+import { AboutModule } from './about/about.module';
+import { ExperienceSkillsModule } from './experience-skills/experience-skills.module';
+import { FeedbacksModule } from './feedbacks/feedbacks.module';
+import { LinksModule } from './links/links.module';
+import { MyServicesModule } from './my-services/my-services.module';
+import { StudiesModule } from './studies/studies.module';
+import { ContactUsModule } from './contact-us/contact-us.module';
 
 
 @NgModule({
     declarations: [
         AymenComponent,
-        IntroComponent,
-        AboutComponent,
-        ContactUsComponent,
-        ExperienceSkillsComponent,
-        FeedbacksComponent,
-        LinksComponent,
-        MyServicesComponent,
-        StudiesComponent
     ],
     imports: [
         CommonModule,
-        AymenRoutingModule
+        AymenRoutingModule,
+        IntroModule,
+        AboutModule,
+        ExperienceSkillsModule,
+        FeedbacksModule,
+        LinksModule,
+        MyServicesModule,
+        StudiesModule,
+        ContactUsModule
     ]
 })
 export class AymenModule { }

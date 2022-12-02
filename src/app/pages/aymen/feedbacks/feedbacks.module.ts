@@ -12,6 +12,9 @@ import { FeedbacksComponent } from './feedbacks.component';
   imports: [
     CommonModule,
     FeedbacksRoutingModule
+  ],
+  exports: [
+    FeedbacksComponent
   ]
 })
 export class FeedbacksModule { }

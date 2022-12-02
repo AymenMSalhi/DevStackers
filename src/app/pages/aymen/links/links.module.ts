@@ -12,6 +12,9 @@ import { LinksComponent } from './links.component';
   imports: [
     CommonModule,
     LinksRoutingModule
+  ],
+  exports: [
+    LinksComponent
   ]
 })
 export class LinksModule { }
