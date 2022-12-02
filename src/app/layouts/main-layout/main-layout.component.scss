@@ -1,7 +1,14 @@
-.navbar-box {
+.navbar-box,
+.footer-box {
   background-color: var(--navbar-bg);
   color: var(--main-color);
+}
+.navbar-box {
   height: 50px;
+}
+.footer-box {
+  min-height: 50px;
+  padding: 24px;
 }
 
 .body-container {
