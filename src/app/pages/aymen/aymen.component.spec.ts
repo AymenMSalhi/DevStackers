@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { AymenComponent } from './aymen.component';
+
+describe('AymenComponent', () => {
+  let component: AymenComponent;
+  let fixture: ComponentFixture<AymenComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ AymenComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(AymenComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

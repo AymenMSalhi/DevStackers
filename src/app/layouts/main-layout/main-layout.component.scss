@@ -1,0 +1,28 @@
+.navbar-box {
+  background-color: var(--navbar-bg);
+  color: var(--main-color);
+  height: 50px;
+}
+
+.body-container {
+  background-color: var(--body-bg);
+  color: var(--primary-text);
+  min-height: calc(100vh - 50px);
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+
+
+.body-container::-webkit-scrollbar {
+  width: 12px;
+  background: var(--scroll-bg);
+  border-radius: 0px;
+}
+
+.body-container::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar);
+  border-radius: 50px;
+  &:hover {
+    background: var(--scroll-bar-hover);
+  }
+}

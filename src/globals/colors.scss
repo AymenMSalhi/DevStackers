@@ -1,0 +1,27 @@
+.light-theme {
+  --navbar-bg: #ffffff;
+
+  --body-bg: #ffffff;
+
+  --main-color: #151515;
+  --primary-text: #1B1B1B;
+  --secondary-color: #333333;
+
+  --scroll-bg: #f7f8f9;
+  --scroll-bar: #e7e8e9;
+  --scroll-bar-hover: #d7d8d9;
+}
+
+.dark-theme {
+  --navbar-bg: #282828;
+
+  --body-bg: #181818;
+
+  --main-color: #fff;
+  --primary-text: #7e7e7e;
+  --secondary-color: #ccc;
+
+  --scroll-bg: #282828;
+  --scroll-bar: #383838;
+  --scroll-bar-hover: #484848
+}

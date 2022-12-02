@@ -1,0 +1,10 @@
+<div [ngClass]="{'light-theme': theme === 'light', 'dark-theme': theme === 'dark'}">
+  <div class="navbar-box">
+    <app-main-header></app-main-header>
+  </div>
+  <div class="body-container">
+    <router-outlet></router-outlet>
+    <app-main-footer></app-main-footer>
+  </div>
+</div>
+
