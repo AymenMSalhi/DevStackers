@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MainLayoutComponent,
-    children: [
-      { path: '', loadChildren: () => import('./pages/aymen/aymen.module').then(m => m.AymenModule)}
-    ]
+    loadChildren: () => import('./components/public/public.module').then(m => m.PublicModule)
+  },
+  {
+    path: 'lf',
+    loadChildren: () => import('./components/user/user.module').then(m => m.UserModule)
   }
 ];
 

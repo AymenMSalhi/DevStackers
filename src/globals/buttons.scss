@@ -1,0 +1,17 @@
+.button {
+  border-radius: var(--radius-5);
+}
+
+.border-button,
+.border-button-sm {
+  background-color: transparent;
+  border: 1px solid var(--btn-border);
+  color: var(--btn-color);
+
+}
+.border-button {
+  padding: 6px 24px;
+}
+.border-button-sm {
+  padding: 4px 12px;
+}

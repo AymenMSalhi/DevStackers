@@ -1,0 +1,22 @@
+<div class="auth-container" [ngClass]="{'light-theme': theme === 'light', 'dark-theme': theme === 'dark'}">
+  <div class="auth-content">
+    <div class="p-24 mx-0">
+      <button class="button border-button-sm" routerLink="/home">
+        <i class="fas fa-arrow-left"></i> Home
+      </button>
+    </div>
+
+    <div class="text-center">
+      <img src="assets/logo/logo-dark.png" class="center-logo" alt="">
+    </div>
+    <div class="text-center">
+      <h1 class="text-logo">LinkFolio</h1>
+    </div>
+
+    <div class="form-row">
+      <div class="form-container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

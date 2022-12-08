@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('globals/variables.scss');
 @import url('globals/colors.scss');
+@import url('globals/utils.scss');
+@import url('globals/buttons.scss');
+@import url('globals/forms.scss');
 
 *,
 html,
@@ -8,4 +11,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  transition: var(--trs-4) !important;
 }

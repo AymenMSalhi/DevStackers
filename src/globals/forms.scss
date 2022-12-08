@@ -1,0 +1,17 @@
+.form-control {
+  border-radius: var(--radius-5) !important;
+  background: var(--input-bg) !important;
+  color: var(--input-color) !important;
+  border-color: var(--input-border) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.form-control::placeholder {
+  color: var(--input-placeholder) !important;
+}
+
+.form-control-auth {
+  border-radius: 0 !important;
+  border: 4px solid var(--input-border-auth) !important;
+}
