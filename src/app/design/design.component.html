@@ -1,0 +1,15 @@
+<div [ngClass]="{'light': theme === 'light' || theme === '', 'dark': theme === 'dark'}">
+
+    <div class="content-box">
+        <div class="text-end">
+            <button class="btn btn-sm me-3 mt-3" [ngClass]="{'btn-light': theme === 'dark', 'btn-dark': theme === 'light'}" (click)="themeSwitch()">
+                {{ theme === 'light'? 'dark':'light' }}
+            </button>
+        </div>
+        <div class="row container-fluid p-3 m-0">
+            <div class="col p-3 bg-light"></div>
+            <div class="col p-3 bg-danger"></div>
+        </div>
+    </div>
+
+</div>

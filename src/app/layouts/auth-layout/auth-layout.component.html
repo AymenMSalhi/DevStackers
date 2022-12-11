@@ -1,13 +1,18 @@
-<div class="auth-container" [ngClass]="{'light-theme': theme === 'light', 'dark-theme': theme === 'dark'}">
+<div class="auth-container" [ngClass]="{'light': !checked, 'dark': checked}">
   <div class="auth-content">
-    <div class="p-24 mx-0">
-      <button class="button border-button-sm" routerLink="/home">
+    <div class="col-12 justify-content-between d-flex p-24 mx-0">
+      <button class="lf-btn lf-btn-bordered" routerLink="/home">
         <i class="fas fa-arrow-left"></i> Home
       </button>
+
+      <div>
+        <p-inputSwitch [(ngModel)]="checked" (click)="switch()"></p-inputSwitch>
+      </div>
     </div>
 
     <div class="text-center">
-      <img src="assets/logo/logo-dark.png" class="center-logo" alt="">
+      <img src="assets/logo/logo-dark.png" class="center-logo" *ngIf="theme === 'dark'" alt="">
+      <img src="assets/logo/logo-light.png" class="center-logo" *ngIf="theme === 'light'" alt="">
     </div>
     <div class="text-center">
       <h1 class="text-logo">LinkFolio</h1>

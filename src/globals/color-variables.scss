@@ -1,0 +1,105 @@
+.dark {
+    /* auth btns */
+    --auth-primary-bg: #0E438D;
+    --auth-transparent-bg: #272F3A00;
+    --login-color: #CCCCCC;
+    --register-color: #FFFFFF;
+
+    /* Layouts */
+    --navbar-bg: #2C2C2C;
+    --body-bg: #282828;
+    --box-bg: #222222;
+
+    /* commons */
+    --primary-color: #ffffff;
+    --primary-bg: #282828;
+    --primary-border: #4D4D4D;
+    --primary-border-active: #777777;
+    --secondary-color: #777777;
+
+    /* inputs */
+    --input-bg: #22222200;
+    --input-placeholder: #777777;
+
+    /* buttons */
+    --border-btn-bg: #22222200;
+    --border-btn: #4D4D4D;
+    --border-btn-color: #777777;
+    --border-btn-hover: #4D4D4D;
+    --border-btn-hover-color: #ffffff;
+
+    --primary-btn-bg: #4D4D4D;
+    --primary-btn-hover: #777777;
+
+    --disabled-btn-bg: #3D3D3D;
+    --disabled-btn-color: #3D3D3D;
+
+    /* Colored Buttons */
+    --warning-btn-color: #000000;
+
+    --danger-bg: #DC3545;
+    --danger-bg-transparent: #432A2C;
+
+    --warning-bg: #FFC107;
+    --warning-bg-transparent: #483F23;
+
+    --success-bg: #198754;
+    --success-bg-transparent: #26362F;
+
+    --info-bg: #0D6EFD;
+    --info-bg-transparent: #243248;
+}
+
+
+.light {
+    /* auth btns */
+    --auth-primary-bg: #0E438D;
+    --auth-transparent-bg: #DBE3EE00;
+    --login-color: #0E438D;
+    --register-color: #FFFFFF;
+
+    /* Layouts */
+    --navbar-bg: #e7e8e9;
+    --body-bg: #ffffff;
+    --box-bg: #f7f8f9;
+
+    /* commons */
+    --primary-color: #151515;
+    --primary-bg: #ffffff;
+    --primary-border: #CCCCCC;
+    --primary-border-active: #888888;
+
+    --secondary-color: #7E7E7E;
+
+    /* inputs */
+    --input-bg: #22222200;
+    --input-placeholder: #777777;
+
+    /* buttons */
+    --border-btn-bg: #22222200;
+    --border-btn: #0E438D;
+    --border-btn-color: #0E438D;
+    --border-btn-hover: #0E438D;
+    --border-btn-hover-color: #ffffff;
+
+    --primary-btn-bg: #0E438D;
+    --primary-btn-hover: #1357B7;
+
+    --disabled-btn-bg: #204070;
+    --disabled-btn-color: #AAAAAA;
+
+    /* Colored Buttons */
+    --warning-btn-color: #000000;
+
+    --danger-bg: #DC3545;
+    --danger-bg-transparent: #FAE1E3;
+
+    --warning-bg: #FFC107;
+    --warning-bg-transparent: #FFF6DA;
+
+    --success-bg: #198754;
+    --success-bg-transparent: #DDEDE6;
+
+    --info-bg: #0D6EFD;
+    --info-bg-transparent: #DBE9FF;
+}

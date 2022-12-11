@@ -32,11 +32,6 @@ const routes: Routes = [
     children: [
       { path: '', loadChildren: () => import('./auth/reset-password-request/reset-password-request.module').then(m => m.ResetPasswordRequestModule) }
     ]
-  },
-  {
-    path: '**',
-    pathMatch: 'full',
-    redirectTo: 'home'
   }
 ];
 
