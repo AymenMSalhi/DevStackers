@@ -7,6 +7,9 @@
 
 @import url('globals/color-variables.scss');
 
+@import url(assets/css-animation/magic.css);
+
+@import 'swiper/css/bundle';
 
 *,
 html,
@@ -15,8 +18,12 @@ body {
   padding: 0;
   box-sizing: border-box;
   transition: .1s !important;
+  color: #fff;
 }
 
+body {
+  background: #040e21 !important;
+}
 
 p, span, div {
   font-weight: normal !important;

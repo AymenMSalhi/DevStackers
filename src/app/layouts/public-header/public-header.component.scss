@@ -1,0 +1,48 @@
+.main-navbar {
+    /*animation: boingInUp 1.5s;*/
+    background: #051129;
+
+    a {
+        color: #fff;
+    }
+    li {
+        margin: 0 4px;
+        /*animation: swashIn 1s !important;*/
+    }
+}
+
+/*.active-link {
+    border-bottom: 4px solid #ff6666;
+}*/
+
+.active-link {
+    position: relative;
+    animation: swashIn .5s !important;
+}
+/*.active-link::before {
+    content: 'before';
+    height: 5px;
+    width: 40%;
+    background: #ff6666;
+    border-radius: 10px;
+    margin-top: -24px;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}*/
+
+.active-link::after {
+    content: '';
+    height: 5px;
+    width: 65%;
+    background: #ff6666;
+    border-radius: 10px;
+    margin: 0 auto;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
